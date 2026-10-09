@@ -1,0 +1,135 @@
+[
+  {
+    "id": "nutrition_pdf",
+    "type": "provided_document",
+    "title": "Nutritional guidelines.- susmita v2.pdf",
+    "fileName": "Nutritional guidelines.- susmita v2.pdf",
+    "pages": 1
+  },
+  {
+    "id": "wellness_pdf",
+    "type": "provided_document",
+    "title": "Wellness Suggestions from Tias.pdf",
+    "fileName": "Wellness Suggestions from Tias.pdf",
+    "pages": 5
+  },
+  {
+    "id": "who_diet",
+    "type": "web",
+    "title": "WHO: Healthy diet",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "who_activity",
+    "type": "web",
+    "title": "WHO: Physical activity",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_sleep",
+    "type": "web",
+    "title": "NHLBI: Healthy Sleep Habits",
+    "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/healthy-sleep-habits",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_apnea_treatment",
+    "type": "web",
+    "title": "NHLBI: Sleep Apnea Treatment",
+    "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/treatment",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_apnea_living",
+    "type": "web",
+    "title": "NHLBI: Living With Sleep Apnea",
+    "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/living-with",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_apnea_diagnosis",
+    "type": "web",
+    "title": "NHLBI: Sleep Apnea Diagnosis",
+    "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/diagnosis",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_apnea_symptoms",
+    "type": "web",
+    "title": "NHLBI: Sleep Apnea Symptoms",
+    "url": "https://www.nhlbi.nih.gov/health/sleep-apnea/symptoms",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_dash",
+    "type": "web",
+    "title": "NHLBI: DASH Eating Plan",
+    "url": "https://www.nhlbi.nih.gov/health/dash-eating-plan",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_diabetes",
+    "type": "web",
+    "title": "NIDDK: Healthy Living with Diabetes",
+    "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_kidney",
+    "type": "web",
+    "title": "NIDDK: Healthy Eating for Adults with Chronic Kidney Disease",
+    "url": "https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd/healthy-eating-adults-chronic-kidney-disease",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_reflux",
+    "type": "web",
+    "title": "NIDDK: Eating, Diet, and Nutrition for GER and GERD",
+    "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults/eating-diet-nutrition",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "who_pcos",
+    "type": "web",
+    "title": "WHO: Polycystic ovary syndrome",
+    "url": "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_thyroid",
+    "type": "web",
+    "title": "NIDDK: Hypothyroidism",
+    "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_aging_activity",
+    "type": "web",
+    "title": "NIA: Health Benefits of Exercise and Physical Activity",
+    "url": "https://www.nia.nih.gov/health/exercise-and-physical-activity/health-benefits-exercise-and-physical-activity",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nih_weight",
+    "type": "web",
+    "title": "NHLBI: Overweight and Obesity Treatment",
+    "url": "https://www.nhlbi.nih.gov/health/overweight-and-obesity/treatment",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nhs_underweight",
+    "type": "web",
+    "title": "NHS: Healthy ways to gain weight",
+    "url": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/",
+    "accessedAt": "2026-10-09"
+  },
+  {
+    "id": "nhs_weight_loss",
+    "type": "web",
+    "title": "NHS: Unintentional weight loss",
+    "url": "https://www.nhs.uk/symptoms/unintentional-weight-loss/",
+    "accessedAt": "2026-10-09"
+  }
+]

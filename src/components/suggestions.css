@@ -1,0 +1,41 @@
+.suggestions-page { max-width: 680px; margin: 30px auto 0; padding-bottom: 240px; }
+.suggestions-page h1 { font-size: 44.2px; letter-spacing: -1.5px; }
+.suggestions-page h1 span { color: #748096; }
+.suggestions-intro { color: #748096; font-size: 16.9px; line-height: 1.7; margin-bottom: 20px; }
+.suggestion-tag-legend { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+.suggestion-tag-key { font-size: 12px; display: inline-flex; align-items: center; gap: 6px; color: #748096; }
+.suggestion-tag-key::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--tag-color); }
+.suggestion-tag--timeOfDay, .suggestion-tag-key--timeOfDay { --tag-color: #1967d2; --tag-background: #e8f0fe; --tag-icon-color: #4285f4; }
+.suggestion-tag--events, .suggestion-tag-key--events { --tag-color: #188038; --tag-background: #e6f4ea; --tag-icon-color: #34a853; }
+.suggestion-tag--categories, .suggestion-tag-key--categories { --tag-color: #886400; --tag-background: #fef7e0; --tag-icon-color: #fbbc05; }
+.suggestion-tag.MuiChip-root { color: var(--tag-color); background: var(--tag-background); font-size: 12px; border: 1px solid transparent; height: 28px; text-transform: capitalize; }
+.suggestion-tag .MuiChip-deleteIcon { color: var(--tag-color); }
+.suggestion-tag .MuiChip-icon { color: var(--tag-icon-color); font-size: 17px; margin-left: 7px; }
+.suggestion-tag.MuiChip-clickable:hover, .suggestion-tag[aria-selected="true"] { border-color: var(--tag-color); background: var(--tag-background); }
+.suggestion-selected-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; max-height: 120px; overflow-y: auto; }
+.suggestion-filter-input { position: relative; }
+.suggestion-result-count { color: #7b899c; font-size: 13px; margin: 0 0 24px; }
+.suggestion-bubbles { display: flex; flex-direction: column; gap: 24px; padding-left: 8px; }
+.suggestion-bubbles--waiting { visibility: hidden; }
+.suggestion-bubble { position: relative; padding: 22px; background: var(--card-background); border: 1px solid #e2e9f2; border-radius: var(--app-radius); box-shadow: 0 4px 18px #25324a08; transform-origin: bottom left; }
+.suggestion-bubble::before { content: ''; position: absolute; top: 30px; left: -7px; width: 12px; height: 12px; background: #fff; border: solid #e2e9f2; border-width: 0 0 1px 1px; transform: rotate(45deg); }
+.suggestion-bubble-icon { display: inline-flex; padding: 6px; border-radius: 8px; color: var(--brand-green); background: var(--brand-green-soft); margin-bottom: 8px; }
+.suggestion-bubble-icon svg { font-size: 20px; }
+.suggestion-bubble h2 { font-size: 20.8px; margin: 0 0 10px; line-height: 1.4; }
+.suggestion-body { font-size: 16.9px; line-height: 1.7; margin: 0; color: #4a566c; }
+.suggestion-context { margin-top: 12px; padding-left: 10px; border-left: 2px solid #d2e3fc; }
+.suggestion-context p { font-size: 13px; line-height: 1.7; color: #748096; margin: 0 0 6px; }
+.suggestion-bubble-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+.suggestion-bubble--pop { animation: suggestion-pop .36s cubic-bezier(.2, .8, .3, 1.1) both; animation-delay: var(--pop-delay); }
+@keyframes suggestion-pop { from { opacity: 0; transform: translateY(14px) scale(.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
+.suggestion-empty { text-align: center; padding: 26px 20px; border-radius: var(--app-radius); background: var(--card-background); }
+.suggestion-empty > svg { color: var(--brand-green); font-size: 32px; }
+.suggestion-empty h2 { font-size: 20.8px; }
+.suggestion-empty p { font-size: 15.6px; color: #748096; line-height: 1.7; }
+.suggestion-filter-dock { position: absolute; z-index: 15; left: 22px; right: 22px; bottom: calc(92px + env(safe-area-inset-bottom)); padding: 12px; border: 1px solid #dfe7f2; border-radius: var(--app-radius); background: rgba(255, 255, 255, .97); box-shadow: 0 8px 32px #25324a18; backdrop-filter: blur(16px); }
+.suggestion-filter-dock .MuiOutlinedInput-root { font-size: 15.6px; border-radius: calc(var(--app-radius) / 2); }
+.suggestion-filter-dock .MuiInputLabel-root { font-size: 15.6px; }
+.suggestion-tag-popup { position: absolute; z-index: 1; left: -12px; right: -12px; bottom: calc(100% + 8px); min-height: 124px; max-height: min(250px, 40dvh); overflow-y: auto; padding: 14px; border: 1px solid #dfe7f2; border-radius: var(--app-radius); background: #fff; box-shadow: 0 6px 24px #25324a15; }
+.suggestion-tag-popup p { font-size: 13px; color: #748096; margin: 0 0 10px; }
+.suggestion-tag-options { display: flex; flex-wrap: wrap; gap: 8px; }
+@media (prefers-reduced-motion: reduce) { .suggestion-bubble--pop { animation: none; } }

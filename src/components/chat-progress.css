@@ -1,0 +1,21 @@
+.chat-progress-widget { padding: 22px; background: var(--brand-blue); color: #fff; border-bottom: .25rem solid rgba(0, 0, 0, .5); border-radius: var(--app-radius); }
+.chat-progress-title { font-size: 20.8px; line-height: 1.5; letter-spacing: -.3px; }
+.chat-progress-title { margin: 0 0 12px; font-weight: 650; }
+.chat-progress-segments { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.chat-progress-segment { display: block; min-width: 0; border: 0; padding: 8px 0; margin: -8px 0; background: none; cursor: pointer; border-radius: var(--app-radius); }
+.chat-progress-segment:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+.chat-progress-segment:disabled { cursor: default; }
+.chat-progress-segment .MuiLinearProgress-root { transition: transform .18s ease, filter .18s ease; }
+.chat-progress-segment:not(:disabled):hover .MuiLinearProgress-root,
+.chat-progress-segment:not(:disabled):focus-visible .MuiLinearProgress-root { transform: translateY(-2px) scaleY(1.2); filter: brightness(1.12); }
+@media (prefers-reduced-motion: reduce) {
+  .chat-progress-segment .MuiLinearProgress-root { transition: none; }
+  .chat-progress-segment:not(:disabled):hover .MuiLinearProgress-root,
+  .chat-progress-segment:not(:disabled):focus-visible .MuiLinearProgress-root { transform: none; }
+}
+.chat-progress-action.MuiButton-root { width: 100%; margin-top: 16px; color: var(--brand-blue); background: #fff; border-radius: calc(var(--app-radius, 1rem) / 2); }
+.chat-progress-action.MuiButton-root .MuiButton-startIcon svg { font-size: 26px; }
+.chat-progress-action.MuiButton-root:hover { background: var(--brand-blue-soft); }
+.chat-progress-action.MuiButton-root:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.home-chat-progress { margin-top: 24px; }
+.page-chat-progress { max-width: 680px; margin: 24px auto 0; }

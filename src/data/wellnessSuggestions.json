@@ -1,0 +1,3038 @@
+[
+  {
+    "id": "balanced-plate",
+    "title": "Build a balanced plate",
+    "suggestion": "Try half a plate of vegetables, a quarter of protein such as dal, beans, tofu, eggs or fish, and a quarter of whole grains.",
+    "questionIds": [
+      "body_measurements",
+      "waist",
+      "waist_hip_ratio",
+      "diabetes",
+      "pcod",
+      "diet",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "pcod",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "plants"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "cooking"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Adapt portions and food choices to your prescribed meal plan; kidney disease may need different protein and mineral targets."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      }
+    ]
+  },
+  {
+    "id": "whole-grain-swap",
+    "title": "Make one whole-grain swap",
+    "suggestion": "Swap a refined grain for oats, whole-wheat roti or another whole grain you enjoy.",
+    "questionIds": [
+      "diet",
+      "waist",
+      "waist_hip_ratio",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "plants"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "shopping"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "vegetable-variety",
+    "title": "Add another vegetable",
+    "suggestion": "Add a vegetable to lunch or dinner and vary the colors across the week.",
+    "questionIds": [
+      "diet",
+      "hypertension"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "plants"
+        },
+        {
+          "questionId": "hypertension",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "cooking"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Follow any kidney-related potassium restrictions."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "legume-meal",
+    "title": "Try a bean or lentil meal",
+    "suggestion": "Include dal, chickpeas or beans in a meal for plant protein and fibre.",
+    "questionIds": [
+      "diet"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "plants"
+        },
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "protein"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Portion and potassium needs can differ with kidney disease."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "protein-meal",
+    "title": "Include a protein food",
+    "suggestion": "Add an appropriate portion of lentils, tofu, eggs, fish or another protein food to a meal.",
+    "questionIds": [
+      "diet"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "protein"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "cooking"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Ask your dietitian about protein portions if you have kidney disease; this is not a high-protein prescription."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "healthy-fat-swap",
+    "title": "Choose an unsaturated fat",
+    "suggestion": "Use a small amount of olive, canola or another unsaturated oil instead of butter when cooking.",
+    "questionIds": [
+      "diet",
+      "ischemic_heart_disease",
+      "peripheral_vascular_disease"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "fats"
+        },
+        {
+          "questionId": "ischemic_heart_disease",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "peripheral_vascular_disease",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "shopping"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      },
+      {
+        "sourceId": "nih_kidney"
+      }
+    ]
+  },
+  {
+    "id": "nuts-seeds",
+    "title": "Add nuts or seeds thoughtfully",
+    "suggestion": "Try a small serving of unsalted nuts or seeds as part of a balanced meal or snack.",
+    "questionIds": [
+      "diet",
+      "late_snacks"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "fats"
+        },
+        {
+          "questionId": "late_snacks",
+          "operator": "equals",
+          "value": true
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Choose an allergy-safe option. Kidney-related potassium and phosphorus restrictions may change suitable choices."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "fibre-gradually",
+    "title": "Build fibre gradually",
+    "suggestion": "Add whole grains, vegetables or legumes gradually rather than changing everything at once.",
+    "questionIds": [
+      "diet",
+      "body_measurements",
+      "waist",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "plants"
+        },
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "shopping"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "water-routine",
+    "title": "Make water easy to reach",
+    "suggestion": "Keep water available and drink regularly through the day, following your own fluid needs.",
+    "questionIds": [
+      "diet"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "water"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Do not use a universal three-litre target. Kidney disease, prescribed fluid limits and other medical needs require an individual plan."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      },
+      {
+        "sourceId": "nih_kidney"
+      }
+    ]
+  },
+  {
+    "id": "unsweetened-drinks",
+    "title": "Choose a drink without added sugar",
+    "suggestion": "Choose water or an unsweetened drink instead of a sugary drink.",
+    "questionIds": [
+      "diabetes",
+      "pcod",
+      "body_measurements",
+      "hba1c"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "pcod",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "hba1c",
+          "operator": "gt",
+          "value": 5.5
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Do not substitute this for the fast-acting carbohydrate in your prescribed low-glucose treatment plan."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      },
+      {
+        "sourceId": "who_diet"
+      }
+    ]
+  },
+  {
+    "id": "lower-salt-cooking",
+    "title": "Flavor food with less salt",
+    "suggestion": "Try herbs and spices for flavor, and choose lower-sodium packaged foods.",
+    "questionIds": [
+      "hypertension",
+      "resistant_hypertension",
+      "kidney_disease",
+      "ischemic_heart_disease"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "hypertension",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "resistant_hypertension",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "kidney_disease",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "ischemic_heart_disease",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "shopping"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Check before using potassium-based salt substitutes, especially with kidney disease or medicines that affect potassium."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_dash"
+      },
+      {
+        "sourceId": "nih_kidney"
+      }
+    ]
+  },
+  {
+    "id": "dash-meal-pattern",
+    "title": "Explore a heart-friendly meal pattern",
+    "suggestion": "Use a DASH-style pattern with vegetables, whole grains and suitable protein foods, adjusted to your needs.",
+    "questionIds": [
+      "hypertension",
+      "resistant_hypertension",
+      "ischemic_heart_disease",
+      "cardiac_hospitalization",
+      "arrhythmias",
+      "stroke_tia",
+      "peripheral_vascular_disease"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "hypertension",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "resistant_hypertension",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "ischemic_heart_disease",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "cardiac_hospitalization",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "arrhythmias",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "stroke_tia",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "peripheral_vascular_disease",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "A kidney condition or prescribed nutrition plan may need modifications."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_dash"
+      }
+    ]
+  },
+  {
+    "id": "mindful-meal",
+    "title": "Give your meal your attention",
+    "suggestion": "Put your phone aside, slow down and notice flavor and fullness while eating.",
+    "questionIds": [
+      "body_measurements",
+      "waist",
+      "waist_hip_ratio",
+      "meals",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "meals",
+          "operator": "gt",
+          "value": 4
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "portion-awareness",
+    "title": "Start with a comfortable portion",
+    "suggestion": "Serve a comfortable portion first, then pause and check whether you are still hungry before taking more.",
+    "questionIds": [
+      "body_measurements",
+      "waist",
+      "waist_hip_ratio",
+      "previous_weight",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "previous_weight",
+          "operator": "bmi_category_increased"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Avoid restrictive portions when underweight, pregnant or following a clinician-directed nutrition plan."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "planned-snack",
+    "title": "Plan a satisfying snack",
+    "suggestion": "When hungry between meals, plan a snack such as fruit with unsweetened yogurt or another suitable whole-food combination.",
+    "questionIds": [
+      "meals",
+      "late_snacks"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "meals",
+          "operator": "gt",
+          "value": 4
+        },
+        {
+          "questionId": "late_snacks",
+          "operator": "equals",
+          "value": true
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Meal count alone does not make an eating pattern unhealthy. Keep medically required snacks and match choices to allergies, glucose management and kidney restrictions."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lighter-earlier-dinner",
+    "title": "Plan dinner with sleep in mind",
+    "suggestion": "Try a lighter dinner a few hours before bed instead of a large late-evening meal.",
+    "questionIds": [
+      "late_snacks",
+      "last_meal",
+      "snoring",
+      "acid_reflux"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "late_snacks",
+          "operator": "equals",
+          "value": true
+        },
+        {
+          "questionId": "last_meal",
+          "operator": "gt",
+          "value": "22:00"
+        },
+        {
+          "questionId": "snoring",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "acid_reflux",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "evening"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Use your bedtime rather than a fixed 7 pm cutoff. Follow prescribed meal and snack timing, especially with insulin."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "reflux-meal-gap",
+    "title": "Leave a gap before lying down",
+    "suggestion": "If reflux bothers you during sleep, finish your meal at least three hours before lying down.",
+    "questionIds": [
+      "acid_reflux"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "acid_reflux",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "evening"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Use a diabetes-safe meal plan if you need a prescribed bedtime snack."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_reflux"
+      }
+    ]
+  },
+  {
+    "id": "reflux-trigger-notes",
+    "title": "Notice your reflux triggers",
+    "suggestion": "Note foods or drinks that reliably worsen your heartburn, then discuss practical swaps with your clinician.",
+    "questionIds": [
+      "acid_reflux"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "acid_reflux",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Avoid eliminating whole food groups without a clear reason."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_reflux"
+      }
+    ]
+  },
+  {
+    "id": "weight-habit-review",
+    "title": "Review recent habit changes",
+    "suggestion": "Review meal patterns, movement and sleep alongside your recent weight change, and choose one sustainable adjustment.",
+    "questionIds": [
+      "previous_weight",
+      "body_measurements"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "previous_weight",
+          "operator": "bmi_category_increased"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "planning"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Weight changes can have several causes. Review what changed before deciding whether weight loss is right for you."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "nih_weight"
+      }
+    ]
+  },
+  {
+    "id": "sustainable-weight-support",
+    "title": "Choose a sustainable weight plan",
+    "suggestion": "If weight management is appropriate for you, ask for a plan built around balanced meals, movement and sleep.",
+    "questionIds": [
+      "body_measurements",
+      "waist",
+      "waist_hip_ratio",
+      "neck",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "neck",
+          "operator": "gte",
+          "value": 40
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Adult BMI is an evaluation measure, not a diagnosis. Pregnancy, unintended weight change and eating-disorder history need tailored advice; neck size alone does not justify weight loss."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "nih_weight"
+      }
+    ]
+  },
+  {
+    "id": "steady-wake-time",
+    "title": "Keep a steady wake time",
+    "suggestion": "Choose a consistent wake time and keep it similar on weekdays and weekends.",
+    "questionIds": [
+      "bedtime_variability",
+      "daytime_fatigue",
+      "interrupted_sleep",
+      "unrefreshing_sleep"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "bedtime_variability",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "interrupted_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "unrefreshing_sleep",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [
+        "planning"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "bedtime-reminder",
+    "title": "Set a wind-down reminder",
+    "suggestion": "Set a reminder to start winding down, allowing enough time for your planned sleep.",
+    "questionIds": [
+      "bedtime_variability",
+      "sleep_hours",
+      "reduced_productivity"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "bedtime_variability",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sleep_hours",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "reduced_productivity",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [
+        "planning"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sleep-opportunity",
+    "title": "Protect time for sleep",
+    "suggestion": "Protect a regular sleep window instead of letting chores or screens push bedtime later.",
+    "questionIds": [
+      "sleep_hours",
+      "daytime_fatigue",
+      "sedentary_sleepiness",
+      "unrefreshing_sleep"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "sleep_hours",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sedentary_sleepiness",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "unrefreshing_sleep",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [
+        "planning"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "The reported uninterrupted-sleep value is not a measurement of total sleep need. Persistent fatigue needs review even with adequate time in bed."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "quiet-wind-down",
+    "title": "Choose a quiet wind-down",
+    "suggestion": "Try reading, a warm bath or a relaxing activity as you get ready for bed.",
+    "questionIds": [
+      "interrupted_sleep",
+      "night_awakenings",
+      "bedtime_variability",
+      "cognitive_changes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "interrupted_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "night_awakenings",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "bedtime_variability",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "cognitive_changes",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "screen-dim",
+    "title": "Dim screens before bed",
+    "suggestion": "Lower screen brightness and put screens aside during your wind-down.",
+    "questionIds": [
+      "sleep_hours",
+      "bedtime_variability",
+      "daytime_fatigue"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "sleep_hours",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "bedtime_variability",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "sleep-space",
+    "title": "Make your sleep space restful",
+    "suggestion": "Keep your sleep space dark, quiet and comfortably cool.",
+    "questionIds": [
+      "interrupted_sleep",
+      "night_awakenings",
+      "unrefreshing_sleep"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "interrupted_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "night_awakenings",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "unrefreshing_sleep",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "caffeine-timing",
+    "title": "Move caffeine earlier",
+    "suggestion": "If you use caffeine, move it earlier in the day and notice whether your sleep improves.",
+    "questionIds": [
+      "interrupted_sleep",
+      "night_awakenings",
+      "sleep_hours",
+      "daytime_fatigue"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "interrupted_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "night_awakenings",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sleep_hours",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Caffeine is not a substitute for sleep or a way to make drowsy driving safe."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_sleep"
+      }
+    ]
+  },
+  {
+    "id": "side-sleeping",
+    "title": "Try a comfortable side position",
+    "suggestion": "If comfortable and safe for you, try sleeping on your side rather than your back.",
+    "questionIds": [
+      "snoring",
+      "observed_apnea",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "snoring",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "observed_apnea",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sex",
+          "operator": "equals",
+          "value": "male"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "night"
+      ],
+      "events": [],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Side sleeping does not replace evaluation for breathing pauses. Adapt to mobility limitations and clinician advice."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_treatment"
+      }
+    ]
+  },
+  {
+    "id": "sleep-diary",
+    "title": "Bring a sleep diary",
+    "suggestion": "Record sleep times, awakenings and daytime sleepiness to share at your next appointment.",
+    "questionIds": [
+      "observed_apnea",
+      "headaches",
+      "nocturia",
+      "unrefreshing_sleep",
+      "cognitive_changes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "observed_apnea",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "headaches",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "nocturia",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "unrefreshing_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "cognitive_changes",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [],
+      "categories": [
+        "sleep"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_diagnosis"
+      }
+    ]
+  },
+  {
+    "id": "brief-relaxation",
+    "title": "Take a quiet pause",
+    "suggestion": "Try a few comfortable breaths or a short guided relaxation, without holding your breath or forcing it.",
+    "questionIds": [
+      "cognitive_changes",
+      "bedtime_variability",
+      "daytime_fatigue",
+      "hypothyroidism"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "cognitive_changes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "bedtime_variability",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "hypothyroidism",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "work_break"
+      ],
+      "categories": [
+        "lifestyle"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "This is a relaxation habit, not treatment for thyroid disease, oxygen deficiency or sleep apnea. Stop if you feel uncomfortable or dizzy."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nutrition_pdf",
+        "pages": [
+          1
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comfortable-movement",
+    "title": "Make room for comfortable movement",
+    "suggestion": "Choose a manageable walk, wheeling session or another activity you enjoy and build up gradually.",
+    "questionIds": [
+      "body_measurements",
+      "waist",
+      "waist_hip_ratio",
+      "diabetes",
+      "pcod",
+      "reduced_productivity",
+      "sex"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "waist_hip_ratio",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "pcod",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "reduced_productivity",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "exercise"
+      ],
+      "categories": [
+        "lifestyle"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Use your care-team activity plan with heart or lung disease, stroke history, neuromuscular disorders or mobility limits."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "who_activity"
+      }
+    ]
+  },
+  {
+    "id": "break-sitting",
+    "title": "Break up sitting",
+    "suggestion": "During a long seated period, take a brief movement break that fits your ability.",
+    "questionIds": [
+      "sedentary_sleepiness",
+      "reduced_productivity",
+      "cognitive_changes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "sedentary_sleepiness",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "reduced_productivity",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "cognitive_changes",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "work_break"
+      ],
+      "categories": [
+        "lifestyle"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Movement may help you feel refreshed, but ongoing sleepiness still needs evaluation."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "who_activity"
+      }
+    ]
+  },
+  {
+    "id": "strength-older-adults",
+    "title": "Support strength as you age",
+    "suggestion": "If suitable for you, include strength and balance activities alongside regular movement.",
+    "questionIds": [
+      "age"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "age",
+          "operator": "gte",
+          "value": 50
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "exercise"
+      ],
+      "categories": [
+        "lifestyle"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Choose supervised or adapted exercises if balance, mobility or medical conditions make this difficult."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_aging_activity"
+      }
+    ]
+  },
+  {
+    "id": "postmeal-movement",
+    "title": "Try comfortable movement after a meal",
+    "suggestion": "If your care plan allows it, choose an easy walk or another comfortable activity after a meal.",
+    "questionIds": [
+      "diabetes",
+      "pcod",
+      "body_measurements"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "pcod",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "body_measurements",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "lifestyle"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Insulin and some diabetes medicines can cause low glucose with activity; follow your meal and glucose plan."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      }
+    ]
+  },
+  {
+    "id": "exercise-recovery",
+    "title": "Plan your exercise recovery",
+    "suggestion": "After activity, return to your usual balanced meal or snack plan and hydrate within your own fluid allowance.",
+    "questionIds": [
+      "diet",
+      "diabetes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "protein"
+        },
+        {
+          "questionId": "diet",
+          "operator": "not_contains",
+          "value": "water"
+        },
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "exercise"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Use prescribed glucose monitoring with insulin; do not force fluids or add protein supplements automatically."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      },
+      {
+        "sourceId": "nih_kidney"
+      }
+    ]
+  },
+  {
+    "id": "diabetes-meal-timing",
+    "title": "Coordinate meal timing with medicines",
+    "suggestion": "Ask your diabetes team how to fit meals, snacks and activity around your medicines.",
+    "questionIds": [
+      "diabetes",
+      "insulin_switch"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "diabetes",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "insulin_switch",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Do not skip or delay prescribed meals or change insulin doses independently."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      }
+    ]
+  },
+  {
+    "id": "insulin-activity-plan",
+    "title": "Agree an activity and glucose plan",
+    "suggestion": "Before changing exercise, agree when to check glucose and how to handle lows with your diabetes team.",
+    "questionIds": [
+      "insulin_switch",
+      "diabetes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "insulin_switch",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "exercise"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Do not alter insulin doses based on this suggestion."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_diabetes"
+      }
+    ]
+  },
+  {
+    "id": "hba1c-review",
+    "title": "Review your HbA1c in context",
+    "suggestion": "Discuss your HbA1c result and an individualized food, activity and follow-up plan with your clinician.",
+    "questionIds": [
+      "hba1c"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "hba1c",
+          "operator": "gt",
+          "value": 5.5
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Your clinician can interpret your HbA1c result alongside your medical history and agree on a personal target."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_diabetes"
+      }
+    ]
+  },
+  {
+    "id": "pcos-habits",
+    "title": "Choose sustainable PCOS habits",
+    "suggestion": "Build enjoyable movement and balanced meals into your routine, alongside your clinician-led PCOS care.",
+    "questionIds": [
+      "pcod"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "pcod",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "day"
+      ],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "dietary"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Healthy habits can be useful without weight loss; avoid blanket low-carbohydrate or high-protein prescriptions."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "who_pcos"
+      }
+    ]
+  },
+  {
+    "id": "thyroid-nutrition-review",
+    "title": "Discuss thyroid care and supplements",
+    "suggestion": "Keep a balanced eating pattern and check any thyroid-support or iodine supplement with your care team.",
+    "questionIds": [
+      "hypothyroidism"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "hypothyroidism",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "shopping"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Lifestyle changes do not replace thyroid medicines or thyroid testing."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          3,
+          4
+        ]
+      },
+      {
+        "sourceId": "nih_thyroid"
+      }
+    ]
+  },
+  {
+    "id": "kidney-personalized-plan",
+    "title": "Personalize your kidney nutrition plan",
+    "suggestion": "Ask a renal dietitian about the right fluid, protein, sodium, potassium and phosphorus choices for you.",
+    "questionIds": [
+      "kidney_disease"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "kidney_disease",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "important",
+    "contextNotes": [
+      "Follow your kidney care team's personal guidance on fluids, protein and potassium."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_kidney"
+      }
+    ]
+  },
+  {
+    "id": "observed-breathing-review",
+    "title": "Arrange a breathing-pause evaluation",
+    "suggestion": "Tell a healthcare professional about observed pauses in breathing during sleep and ask about sleep evaluation.",
+    "questionIds": [
+      "observed_apnea"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "observed_apnea",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "important",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_diagnosis"
+      }
+    ]
+  },
+  {
+    "id": "persistent-sleepiness-review",
+    "title": "Discuss persistent daytime sleepiness",
+    "suggestion": "Bring persistent sleepiness, unrefreshing sleep or repeated awakenings to your healthcare professional.",
+    "questionIds": [
+      "daytime_fatigue",
+      "unrefreshing_sleep",
+      "night_awakenings",
+      "sedentary_sleepiness"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "daytime_fatigue",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "unrefreshing_sleep",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "night_awakenings",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sedentary_sleepiness",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "important",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_symptoms"
+      }
+    ]
+  },
+  {
+    "id": "drowsy-driving",
+    "title": "Do not drive when sleepy",
+    "suggestion": "If you feel sleepy, do not drive; arrange another way to travel and discuss the sleepiness with your clinician.",
+    "questionIds": [
+      "driving_sleepiness",
+      "sleepiness_accidents"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "driving_sleepiness",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "sleepiness_accidents",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "driving"
+      ],
+      "categories": [
+        "safety"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "safety",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "heart-sleep-review",
+    "title": "Discuss sleep alongside heart care",
+    "suggestion": "Tell your care team about sleep concerns alongside your heart, circulation or blood-pressure history.",
+    "questionIds": [
+      "resistant_hypertension",
+      "ischemic_heart_disease",
+      "cardiac_hospitalization",
+      "arrhythmias",
+      "stroke_tia",
+      "peripheral_vascular_disease"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "resistant_hypertension",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "ischemic_heart_disease",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "cardiac_hospitalization",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "arrhythmias",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "stroke_tia",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "peripheral_vascular_disease",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "important",
+    "contextNotes": [
+      "Your care team can assess heart or circulation symptoms and advise on next steps."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "lung-sleep-review",
+    "title": "Review breathing and sleep together",
+    "suggestion": "Discuss breathing concerns during sleep with the team managing your lung condition.",
+    "questionIds": [
+      "copd_asthma_hypoxia"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "copd_asthma_hypoxia",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "important",
+    "contextNotes": [
+      "Do not change oxygen, inhalers or breathing-device settings from wellness advice."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "surgery-sleep-disclosure",
+    "title": "Mention sleep concerns before procedures",
+    "suggestion": "Before a procedure, tell the team about prior anesthesia complications and any known or suspected sleep apnea.",
+    "questionIds": [
+      "anesthesia_complications",
+      "observed_apnea"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "anesthesia_complications",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "observed_apnea",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "procedure"
+      ],
+      "categories": [
+        "safety"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "important",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "neuromuscular-activity-review",
+    "title": "Ask for an adapted activity plan",
+    "suggestion": "Ask your care team which movement and sleep-support habits suit your neuromuscular condition.",
+    "questionIds": [
+      "neuromuscular_disorders"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "neuromuscular_disorders",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "exercise"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "Avoid unsupervised exercise or breathing exercises that exceed your ability."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "who_activity"
+      }
+    ]
+  },
+  {
+    "id": "headache-sleep-review",
+    "title": "Record headaches alongside sleep",
+    "suggestion": "Note headache timing and your sleep pattern, and share recurring headaches with your clinician.",
+    "questionIds": [
+      "headaches"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "headaches",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "Headaches have many causes. Ask your clinician to help identify the cause if they persist."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_symptoms"
+      }
+    ]
+  },
+  {
+    "id": "nocturia-review",
+    "title": "Discuss repeated waking to urinate",
+    "suggestion": "Record awakenings to urinate and discuss them alongside your sleep and other symptoms.",
+    "questionIds": [
+      "nocturia"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "nocturia",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [
+        "morning"
+      ],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "Do not restrict fluids aggressively or change diuretics independently."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_symptoms"
+      }
+    ]
+  },
+  {
+    "id": "eye-and-sleep-review",
+    "title": "Mention sleep concerns during eye care",
+    "suggestion": "Keep your eye-care follow-up and mention any breathing pauses or daytime sleepiness you have noticed.",
+    "questionIds": [
+      "glaucoma"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "glaucoma",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "Sleep habits do not replace glaucoma treatment or eye-pressure monitoring."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "pregnancy-personalized-care",
+    "title": "Use a pregnancy-aware wellness plan",
+    "suggestion": "Discuss sleep and nutrition with your maternity or usual care team if you have a history of pregnancy-related complications.",
+    "questionIds": [
+      "pregnancy_complications",
+      "adverse_pregnancy_outcomes"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "pregnancy_complications",
+          "operator": "risk_positive"
+        },
+        {
+          "questionId": "adverse_pregnancy_outcomes",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "These questions record history, not current pregnancy status. Do not prescribe weight loss or restrictive meal plans from this history."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_living"
+      }
+    ]
+  },
+  {
+    "id": "reproductive-sleep-review",
+    "title": "Include sleep in your care conversation",
+    "suggestion": "Mention sleep and daytime energy concerns when discussing infertility or erectile dysfunction with your clinician.",
+    "questionIds": [
+      "infertility_ed"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "infertility_ed",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [
+      "Discuss possible causes with your clinician before taking hormones or supplements."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          5
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_symptoms"
+      }
+    ]
+  },
+  {
+    "id": "snoring-check-in",
+    "title": "Bring snoring to your next check-in",
+    "suggestion": "Discuss persistent loud snoring with your healthcare professional, especially with sleepiness or breathing pauses.",
+    "questionIds": [
+      "snoring"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "snoring",
+          "operator": "risk_positive"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "all_ages",
+    "priority": "routine",
+    "contextNotes": [],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "sourceId": "nih_apnea_symptoms"
+      }
+    ]
+  },
+  {
+    "id": "underweight-nutrition",
+    "title": "Ask about adequate nourishment",
+    "suggestion": "If your adult BMI is below 18.5, ask for help meeting your nutrition needs rather than reducing portions.",
+    "questionIds": [
+      "body_measurements"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "body_measurements",
+          "operator": "bmi_below",
+          "value": 18.5
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "meals"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "Adult BMI cutoffs do not apply to children or pregnancy; low BMI alone does not establish a diagnosis."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "nhs_underweight"
+      }
+    ]
+  },
+  {
+    "id": "weight-decrease-review",
+    "title": "Understand a decrease in weight",
+    "suggestion": "If your weight has dropped, check whether it was intended and discuss an unexplained drop with your clinician.",
+    "questionIds": [
+      "previous_weight",
+      "body_measurements"
+    ],
+    "relevance": {
+      "anyOf": [
+        {
+          "questionId": "previous_weight",
+          "operator": "weight_decreased"
+        }
+      ],
+      "allOf": [],
+      "excludeIf": []
+    },
+    "tags": {
+      "timeOfDay": [],
+      "events": [
+        "planning"
+      ],
+      "categories": [
+        "medical_follow_up"
+      ]
+    },
+    "audience": "adults",
+    "priority": "routine",
+    "contextNotes": [
+      "If your weight loss was unexpected, discuss it with your clinician before trying to lose more weight."
+    ],
+    "sourceReferences": [
+      {
+        "sourceId": "wellness_pdf",
+        "pages": [
+          2,
+          3
+        ]
+      },
+      {
+        "sourceId": "nhs_weight_loss"
+      }
+    ]
+  }
+]

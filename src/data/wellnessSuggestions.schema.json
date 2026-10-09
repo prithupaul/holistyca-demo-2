@@ -1,0 +1,371 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Questionnaire-linked nutrition and wellness suggestions",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "suggestion",
+      "questionIds",
+      "relevance",
+      "tags",
+      "audience",
+      "priority",
+      "contextNotes",
+      "sourceReferences"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]+$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "suggestion": {
+        "type": "string",
+        "minLength": 1
+      },
+      "questionIds": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "snoring",
+            "daytime_fatigue",
+            "observed_apnea",
+            "hypertension",
+            "body_measurements",
+            "age",
+            "neck",
+            "sex",
+            "previous_weight",
+            "waist",
+            "waist_hip_ratio",
+            "meals",
+            "late_snacks",
+            "last_meal",
+            "diet",
+            "interrupted_sleep",
+            "sleep_hours",
+            "bedtime_variability",
+            "hypothyroidism",
+            "diabetes",
+            "insulin_switch",
+            "hba1c",
+            "pcod",
+            "resistant_hypertension",
+            "ischemic_heart_disease",
+            "cardiac_hospitalization",
+            "arrhythmias",
+            "stroke_tia",
+            "headaches",
+            "cognitive_changes",
+            "night_awakenings",
+            "unrefreshing_sleep",
+            "reduced_productivity",
+            "sleepiness_accidents",
+            "sedentary_sleepiness",
+            "driving_sleepiness",
+            "glaucoma",
+            "acid_reflux",
+            "copd_asthma_hypoxia",
+            "kidney_disease",
+            "peripheral_vascular_disease",
+            "anesthesia_complications",
+            "neuromuscular_disorders",
+            "nocturia",
+            "pregnancy_complications",
+            "adverse_pregnancy_outcomes",
+            "infertility_ed"
+          ]
+        }
+      },
+      "relevance": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "anyOf",
+          "allOf",
+          "excludeIf"
+        ],
+        "properties": {
+          "anyOf": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "allOf": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          },
+          "excludeIf": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/condition"
+            }
+          }
+        }
+      },
+      "tags": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "timeOfDay",
+          "events",
+          "categories"
+        ],
+        "properties": {
+          "timeOfDay": {
+            "type": "array",
+            "minItems": 0,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "day",
+                "evening",
+                "morning",
+                "night"
+              ]
+            },
+            "maxItems": 1
+          },
+          "events": {
+            "type": "array",
+            "minItems": 0,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "cooking",
+                "driving",
+                "exercise",
+                "meals",
+                "planning",
+                "procedure",
+                "shopping",
+                "work_break"
+              ]
+            },
+            "maxItems": 1
+          },
+          "categories": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "dietary",
+                "lifestyle",
+                "medical_follow_up",
+                "safety",
+                "sleep"
+              ]
+            },
+            "maxItems": 1
+          }
+        },
+        "description": "At most one tag of each type, for at most three tags total. Optional times and activities may be empty."
+      },
+      "audience": {
+        "enum": [
+          "adults",
+          "all_ages"
+        ]
+      },
+      "priority": {
+        "enum": [
+          "routine",
+          "important",
+          "safety"
+        ]
+      },
+      "contextNotes": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sourceReferences": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "sourceId"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "sourceId": {
+              "enum": [
+                "nutrition_pdf",
+                "wellness_pdf",
+                "who_diet",
+                "who_activity",
+                "nih_sleep",
+                "nih_apnea_treatment",
+                "nih_apnea_living",
+                "nih_apnea_diagnosis",
+                "nih_apnea_symptoms",
+                "nih_dash",
+                "nih_diabetes",
+                "nih_kidney",
+                "nih_reflux",
+                "who_pcos",
+                "nih_thyroid",
+                "nih_aging_activity",
+                "nih_weight",
+                "nhs_underweight",
+                "nhs_weight_loss"
+              ]
+            },
+            "pages": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "type": "object",
+      "required": [
+        "questionId",
+        "operator"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "questionId": {
+          "enum": [
+            "snoring",
+            "daytime_fatigue",
+            "observed_apnea",
+            "hypertension",
+            "body_measurements",
+            "age",
+            "neck",
+            "sex",
+            "previous_weight",
+            "waist",
+            "waist_hip_ratio",
+            "meals",
+            "late_snacks",
+            "last_meal",
+            "diet",
+            "interrupted_sleep",
+            "sleep_hours",
+            "bedtime_variability",
+            "hypothyroidism",
+            "diabetes",
+            "insulin_switch",
+            "hba1c",
+            "pcod",
+            "resistant_hypertension",
+            "ischemic_heart_disease",
+            "cardiac_hospitalization",
+            "arrhythmias",
+            "stroke_tia",
+            "headaches",
+            "cognitive_changes",
+            "night_awakenings",
+            "unrefreshing_sleep",
+            "reduced_productivity",
+            "sleepiness_accidents",
+            "sedentary_sleepiness",
+            "driving_sleepiness",
+            "glaucoma",
+            "acid_reflux",
+            "copd_asthma_hypoxia",
+            "kidney_disease",
+            "peripheral_vascular_disease",
+            "anesthesia_complications",
+            "neuromuscular_disorders",
+            "nocturia",
+            "pregnancy_complications",
+            "adverse_pregnancy_outcomes",
+            "infertility_ed"
+          ]
+        },
+        "operator": {
+          "enum": [
+            "risk_positive",
+            "equals",
+            "gt",
+            "gte",
+            "not_contains",
+            "bmi_category_increased",
+            "bmi_below",
+            "weight_decreased"
+          ]
+        },
+        "value": {
+          "type": [
+            "string",
+            "number",
+            "boolean"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "enum": [
+                  "equals",
+                  "gt",
+                  "gte",
+                  "not_contains",
+                  "bmi_below"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operator": {
+                "enum": [
+                  "risk_positive",
+                  "bmi_category_increased",
+                  "weight_decreased"
+                ]
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
